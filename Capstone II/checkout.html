@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+</head>
+
+<body onload="init()" background-color="#C1E3EE">
+
+  <header class="header-checkout">
+    <div class="container-fluid">
+
+      <!-- Navigation bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Back to catalogue.</a>
+
+        <h1 style="font-size:40px; font-style: Open Sans;">Checkout</h1>
+  </header>
+
+
+  <!--Cart-->
+
+  <div class="grid">
+
+    <div class="products">
+
+      <div class="shopping-cart2">
+        <div class="shopping-cart-head">Cart:
+        </div>
+        <ul class="shopping-cart-list">
+        </ul>
+        <ul class="discount-total">Total after discount: </ul>
+        </ul>
+        <ul class="delivery-total">Total after delivery: </ul>
+        </ul>
+        <ul class="vat-class">VAT@ 14%: </ul>
+        </ul>
+        <ul class="total-class">Total (incl VAT): </ul>
+      </div>
+    </div>
+    <div class="col-6">
+
+      <br>
+
+      <!--delivery radio buttons-->
+
+      <section id="main">
+        <form class="billing-form">
+          <h2 class="main-title">Billing Address</h2>
+          <label for="fname" class="billing-label">Full Name</label>
+          <input class="billing-info" type="text" id="name" name="name" placeholder="Name Surname"><br>
+          <label for="email" class="billing-label">Email</label>
+          <input class="billing-info" type="text" id="email" name="email" placeholder="your@email.com"><br>
+          <label for="adr" class="billing-label">Address</label>
+          <input class="billing-info" type="text" id="address" name="address" placeholder="123 Your Street"><br>
+          <label for="city" class="billing-label">City</label>
+          <input class="billing-info" type="text" id="city" name="city" placeholder="Johannesburg, Cape Town..."><br>
+          <button type="button" class="btn btn-secondary shop-item-button" id="shipping-cost">Submit</button>
+        </form>
+
+        <h4 class="mb-3">Delivery</h4>
+
+        <div>
+          <div class="custom-control custom-radio">
+            <input id="collect" name="deliveryMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="collect">collect</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="delivery" name="deliveryMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">delivery:R50</label>
+          </div>
+        </div>
+        <!--promo code form-->
+        <br>
+        <div class="col-6">
+
+          <form class="form">
+            <h2 class="main-title">Promotion Code:</h2>
+            <input name="promo-code" type="text" class="form-promotion-code">
+            <br>
+            <button type="button" class="form-promotion btn btn-secondary shop-item-button"
+              onclick="submitPromoCode()">Enter</button>
+          </form>
+
+          <div>
+            <button id="orderButton" type="button" class="btn btn-secondary btn-block" type="button">
+              <h5>ORDER NOW!</h5>
+            </button>
+          </div>
+
+          <img id="scooter" src="products/images/scooter.jpg" height="100px" width="100px">
+          <br>
+          <h3>Stores</h3>
+          <div id="accordion">
+            <div id="accordion-wrapper">
+              <div class="card">
+                <p class="card-title"><strong>Gauteng</strong>
+                  <div class="card-body">
+                    <p>Woodmead Plaza</p>
+                    <p>Sandton City</p>
+                    <p>Mall of Africa</p>
+                  </div>
+              </div>
+            </div>
+            <div id="accordion-wrapper">
+              <div class="card">
+                <p class="card-title"><strong>Western Cape</strong>
+                  <div class="card-body">
+                    <p>Canal Walk</p>
+                    <p>Cavendish Square</p>
+                    <p>V&A Waterfront</p>
+                  </div>
+              </div>
+            </div>
+            <div id="accordion-wrapper">
+              <div class="card">
+                <p class="card-title"><strong>Kwa-Zulu Natal</strong>
+                  <div class="card-body">
+                    <p>Gateway Shopping Centre</p>
+                  </div>
+              </div>
+            </div>
+            <div id="accordion-wrapper">
+              <div class="card">
+                <p class="card-title"><strong>North-West</strong>
+                  <div class="card-body">
+                    <p>Matlosana Mall</p>
+                    <p>Waterfall Mall</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <footer id="footer">
+
+        <a class="social" href="https://facebook.com" target="_blank"><img class="social.img" height="25px"
+            src="products/images/images.png" alt=""></a>
+        <a class="social" href="https://twitter.com" target="_blank"><img class="social.img" height="25px"
+            src="products/images/twitter.png" alt=""></a>
+        <a class="social" href="https://instagram.com" target="_blank"><img class="social.img" height="25px"
+            src="products/images/iG.png" alt=""></a>
+        <p>© Copyright 2022 BlackBird</p>
+
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="checkout.js"></script>
+</body>
+
+</html>

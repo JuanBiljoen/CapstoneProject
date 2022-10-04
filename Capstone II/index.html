@@ -1,0 +1,95 @@
+   <!DOCTYPE html>
+   <html lang="en">
+
+
+   <head>
+    <title>Catalogue</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+     </script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+     </script>
+
+   </head>
+
+   <body onload="init()">
+
+     <header id="header">
+       <div class="container-fluid">
+
+         <!-- Navigation bar -->
+
+         <nav class="navbar navbar-expand-lg navbar-dark">
+           <a class="navbar-brand" href="landing.html">BlackBird Boutique</a>
+
+           <h1>Catalogue</h1>
+
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                 <a class="nav-link" href="aboutUs.html">About us</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="index.html">Catalogue</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="delivery.html">Delivery</a>
+               </li>
+               <li class="nav-item cart">
+                 <a class="nav-link" href="checkout.html">Cart (<span>0</span>)</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Download BlackBirdApp</a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                   <a class="dropdown-item" href="">Apple Store</a>
+                   <a class="dropdown-item" href="">Google Play</a>
+                 </div>
+               </li>
+             </ul>
+           </div>
+         </nav>
+     </header>
+
+     <div class="container">
+
+       <div class="products">
+
+         <div class="shopping-cart">
+           <div class="shopping-cart-head">Cart:
+           </div>
+           <ul class="shopping-cart-list">
+           </ul>
+           <div class="cart-buttons">
+             <a href="#0" class="button empty-cart-btn">Clear cart</a>
+             <a href="#0" class="button cart-checkout">Checkout <span class="total-price"></span></a>
+           </div>
+         </div>
+       </div>
+
+
+       <footer id="footer">
+
+         <a class="social" href="https://facebook.com" target="_blank"><img class="social.img" height="25px"
+             src="products/images/images.png" alt=""></a>
+         <a class="social" href="https://twitter.com" target="_blank"><img class="social.img" height="25px"
+             src="products/images/twitter.png" alt=""></a>
+         <a class="social" href="https://instagram.com" target="_blank"><img class="social.img" height="25px"
+             src="products/images/iG.png" alt=""></a>
+         <p>© Copyright 2022 BlackBird</p>
+
+       </footer>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script src="index.js"></script>
+   </body>
+
+   </html>
